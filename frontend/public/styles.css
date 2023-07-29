@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: whitesmoke;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+a,
+p {
+  color: black;
+  text-decoration: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 520;
+}
+nav {
+  z-index: 0;
+}
+
+.burgerContent {
+  width: 320px;
+  /* position: fixed; */
+  padding-top: 100px;
+  height: 600px;
+  background-color: whitesmoke;
+}
+.burgerContent li {
+  padding-bottom: 14px;
+  padding-left: 20px;
+}
+.burger{
+  display: none;
+}
+
+
+.logo {
+  height: 50px;
+}
+.homeHeader {
+  margin-top: 60px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 700px;
+  background-image: url("./images/1448078.jpg");
+}
+.headerText {
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 7rem;
+}
+h2 {
+  font-size: 5rem;
+  margin: 40px 0 40px 74px;
+}
+h3 {
+  font-size: 2rem;
+}
+.Main {
+  padding: 0%;
+}
+ 
+
+span{
+  font-size: 20px;
+  position: relative;
+  bottom: 5px;
+}
+/*Card */
+.prodCard { 
+  background-color: rgb(238, 238, 238);
+  border-radius: 10px;
+  width: 400px;
+  height: 520px;
+}
+
+.prodButton {
+  width: 400px;
+}
+
+.cardImg {
+  margin-left: 30px;
+
+  height: 440px;
+  width: 340px;
+  margin-top: 20px;
+}
+
+/* Info */
+.about {
+  display: flex;
+  justify-content: space-evenly;
+  flex-grow: initial;
+  flex-wrap: wrap;
+  gap: 140px;
+}
+.InfHeader {
+  margin: 20px 0 40px 74px;
+}
+.paragraph {
+  width: 570px;
+  height: 300px;
+}
+.paragraph p {
+  color: gray;
+}
+/* Mail */
+.MailBox {
+  background-color: rgba(0, 0, 0, 0.829);
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .MailBox div,
+  h3,
+  p,
+  form {
+    color: white;
+    margin: 20px;
+    text-align: center;
+  }
+}
+hr{
+  margin: 50px 80px 0 80px;
+ border-bottom: 1px solid rgba(128, 128, 128, 0.122);
+}
+input {
+  height: 2.4rem;
+  width: 20rem;
+  border-radius: 5px;
+  background-color: whitesmoke;
+  border: 0;
+  padding-left: 20px;
+  
+}
+
+::placeholder {
+  padding-left: 0px;
+}
+
+/* Footer */
+.bottomNav {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.bottomNav ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 80px;
+}
+.bottomNav li a {
+  color: gray;
+  font-size: 14.5px;
+}
+.bottomNav li a:hover{
+  color: #15170b;
+}
+.bottomNav li {
+  padding-top: 10px;
+}
+
+
+/* All Products */
+
+@media screen and (max-width: 1000px) {
+  .homeHeader {
+    background-color: #15170b;
+    background-size: 70%;
+    background-repeat: repeat;
+    background-image: url("./images/dust.png");
+  }
+  .headerText,
+  h2 {
+    font-size: 3rem;
+    margin: 40px 0 40px 0px;
+  }
+  h2,
+  h3 {
+    margin: 40px 0 40px 40px;
+  }
+  .prodCard {
+    width: 150px;
+    height: 260px;
+  }
+
+  .prodButton {
+    width: 150px;
+  }
+
+  .cardImg {
+    /* padding-right: 20px; */
+    height: 180px;
+    width: 140px;
+
+    margin: 0 0px 0 5px;
+  }
+  .about {
+    gap: 0px;
+  }
+  .paragraph {
+    width: 370px;
+    height: 280px;
+  }
+  input {
+    margin-bottom: 20px;
+  }
+  .bottomNav ul{
+    margin: 10px 0 10px 0 ;
+  }
+  .bottomNav .lastTwo {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .lastTwo div{
+    padding: 0 50px 0 45px;
+  }
+  .burger{
+    display: inline;
+  }
+  .navContent{
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .headerText {
+    font-size: 5rem;
+  }
+}
